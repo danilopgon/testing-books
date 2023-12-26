@@ -4,8 +4,7 @@ jobs:
 
   # Job names can contain alphanumeric characters and '_', cannot start with a number
   - job: Cypress_e2e_tests
-    pool:
-      vmImage: 'ubuntu-latest'
+    pool: laptop
     steps:
       - task: NodeTool@0
         inputs:
