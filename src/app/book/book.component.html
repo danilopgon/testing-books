@@ -1,0 +1,30 @@
+<div class="container d-flex flex-column text-center justify-content-center align-content-center flex-wrap">
+    <h1>{{book?.name}}</h1>
+    <img [src]="book?.photoUrl" [alt]="book?.name" width="300px">
+    <h2>{{book?.author}}</h2>
+    <p>{{book?.description}}</p>
+</div>
+<hr>
+<form [formGroup]="form" class="container d-flex flex-column my-3">
+    <div class="form-group mb-3 d-flex flex-column">
+        <label for=" name">Name</label>
+        <input type="text" id="name" formControlName="name">
+    </div>
+    <div class="form-group mb-3 d-flex flex-column">
+        <label for=" author">Author</label>
+        <input type="text" id="author" formControlName="author">
+    </div>
+    <div class="form-group mb-3 d-flex flex-column">
+        <label for=" description">Description</label>
+        <input type="text" id="description" formControlName="description">
+    </div>
+    <div class="form-group mb-3 d-flex flex-column">
+        <label for=" price">Price</label>
+        <input type="text" id="price" formControlName="price">
+    </div>
+    <button (click)="updateBook()" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<div class="container d-flex flex-column">
+    <button [disabled]="!form.valid" (click)="deleteBook()" class="btn btn-danger">Delete</button>
+</div>
+```
