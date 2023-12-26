@@ -13,7 +13,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cy:verify": "cypress verify",
-    "test:ci:local": "ng test --watch=false --browsers=ChromeHeadlessCI"
+    "test:ci:local": "ng test --watch=false"
   },
   "private": true,
   "dependencies": {
