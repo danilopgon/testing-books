@@ -39,7 +39,5 @@ jobs:
         displayName: 'Cypress verify'
 
       # The next command starts the server and runs Cypress end-to-end tests against it.
-      # The test artifacts (screenshots & test output) will be uploaded to Cypress Cloud
-      # To record on Cypress Cloud we need to set CYPRESS_RECORD_KEY environment variable
       - script: npm run test:ci:local
         displayName: 'Run Cypress tests locally'
