@@ -22,9 +22,9 @@
         <label for=" price">Price</label>
         <input type="text" id="price" formControlName="price">
     </div>
-    <button (click)="updateBook()" type="submit" class="btn btn-primary">Submit</button>
+    <button [disabled]="!form.valid" (click)="updateBook()" type="submit" class="btn btn-primary">Submit</button>
 </form>
 <div class="container d-flex flex-column">
-    <button [disabled]="!form.valid" (click)="deleteBook()" class="btn btn-danger">Delete</button>
+    <button (click)="deleteBook()" class="btn btn-danger">Delete</button>
 </div>
 ```

@@ -12,8 +12,7 @@
     "mock": "json-server db.json",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cy:verify": "cypress verify",
-    "test:ci:local": "ng test --watch=false"
+    "cy:verify": "cypress verify"
   },
   "private": true,
   "dependencies": {
