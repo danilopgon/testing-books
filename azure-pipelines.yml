@@ -14,5 +14,5 @@ jobs:
         displayName: 'Cypress verify'
 
       # The next command starts the server and runs Cypress end-to-end tests against it.
-      - script: npm run test:ci:local
+      - script: npm run cypress:run
         displayName: 'Run Cypress tests locally'
